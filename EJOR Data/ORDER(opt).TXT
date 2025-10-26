@@ -1,0 +1,3 @@
+//product demand(t) of the market for each period
+t=1	t=2	t=3
+35700	30240 	31500 

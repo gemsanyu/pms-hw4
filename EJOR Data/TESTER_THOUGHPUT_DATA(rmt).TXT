@@ -1,0 +1,5 @@
+//throughput for testers(m) producing products(t)
+	t=1	t=2	t=3
+m=1	8	8	8
+m=2	5	5	5
+m=3	7	7	7

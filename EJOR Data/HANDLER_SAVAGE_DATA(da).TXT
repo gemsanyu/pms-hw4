@@ -1,0 +1,3 @@
+In the last period, the savage of the four types of handlers(a).
+a=1	a=2	a=3	a=4
+100000      70000     	130000	160000

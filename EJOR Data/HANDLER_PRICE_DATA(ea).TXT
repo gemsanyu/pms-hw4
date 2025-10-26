@@ -1,0 +1,3 @@
+In the initial period, the price of the four types of handler(a).
+a=1	a=2	a=3	a=4
+300000	210000	420000	480000

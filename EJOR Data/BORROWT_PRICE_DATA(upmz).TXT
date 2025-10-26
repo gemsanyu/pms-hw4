@@ -1,0 +1,5 @@
+//For each period (p), we consider to acquire three types of man resource(m) from two different channels(z)
+	z=1	z=2
+m=1	600000	1800000    
+m=2	300000     900000    
+m=3	450000    1350000

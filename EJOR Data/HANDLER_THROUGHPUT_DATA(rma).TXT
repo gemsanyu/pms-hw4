@@ -1,0 +1,5 @@
+//the throughput when a handler(h) cofigured with a tester(m)
+	h=1	h=2	h=3	h=4
+m=1	8	8	8	8
+m=2	5	5	5	5
+m=3	7	7	7	7

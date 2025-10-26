@@ -1,0 +1,5 @@
+//Produciton capabilities for testers(m) producing products(t)
+	t=1	t=2	t=3
+m=1	1	1	0
+m=2	1	0	1
+m=3	0	1	1

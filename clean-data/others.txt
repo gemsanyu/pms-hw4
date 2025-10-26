@@ -1,0 +1,14 @@
+Period 8
+Tester 3
+Handler 4
+Order 3
+Ip 1.02
+jp,t = bp,t*0.1
+K0a ={2,3,3,2}
+K0m ={2,1,1}
+lp,t =bp,t*0.2
+wp,m 1800
+yp,m=yp,a= 0.8
+F0=20000000
+S0={-3113,0,0}
+
