@@ -202,10 +202,15 @@ def solve(problem: RPP):
     handler_purchase_cost = sum((problem.handler_initial_prices[h,a]-problem.handler_salvage_prices[h,a])*(vars.num_handlers[h][a]-problem.initial_num_handlers[h,a]) for h in problem.handler_categories for a in problem.handlers)
     obj = last_capital - tester_purchase_cost - handler_purchase_cost
     solver.Maximize(obj)
+    solver.SetNumThreads(16)
     status = solver.Solve()
-    if status == pywraplp.Solver.OPTIMAL:
+    if status == pywraplp.Solver.OPTIMAL or status == pywraplp.Solver.FEASIBLE:
         print("Objective =", solver.Objective().Value())
-
+    print(status)
+    for var in solver.variables():
+        val = var.solution_value()
+        # if abs(val) > 1e-6:   # print only non-zero variables (optional)
+        print(f"{var.name():<30s} = {val:,.6f}")
 
 def run():
     problem = RPP()
