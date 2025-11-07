@@ -2,7 +2,7 @@ from typing import List
 
 from ortools.linear_solver import pywraplp
 
-from problem import RPP
+from problem_deterministic import RPP
 
 
 def nested_shape(lst):
