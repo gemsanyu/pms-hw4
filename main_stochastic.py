@@ -208,14 +208,14 @@ def solve(problem: RPP):
     status = solver.Solve()
     if status == pywraplp.Solver.OPTIMAL or status == pywraplp.Solver.FEASIBLE:
         print("Objective =", solver.Objective().Value())
-    print(status)
-    for var in solver.variables():
-        val = var.solution_value()
-        # if abs(val) > 1e-6:   # print only non-zero variables (optional)
-        print(f"{var.name():<30s} = {val:,.6f}")
+    # print(status)
+    # for var in solver.variables():
+    #     val = var.solution_value()
+    #     # if abs(val) > 1e-6:   # print only non-zero variables (optional)
+    #     print(f"{var.name():<30s} = {val:,.6f}")
 
 def run():
-    problem = RPP(num_scenarios=1000, #tambahin jadi berapa gitu, 10?
+    problem = RPP(num_scenarios=10, #tambahin jadi berapa gitu, 10?
                  distribution="uniform", #antara uniform atau normal 
                  variance=0.1) #dari 0.1 sampai 1? 
     # solve(problem)
